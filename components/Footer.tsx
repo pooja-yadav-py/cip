@@ -1,4 +1,5 @@
-import Link from 'next/link'
+import Link from 'next/link';
+
 import { FiMail, FiPhone, FiFacebook, FiLinkedin, FiInstagram, FiYoutube } from 'react-icons/fi'
 
 // X (formerly Twitter) icon component
@@ -65,7 +66,9 @@ export default function Footer() {
                   className="w-10 h-10 rounded-lg border border-gray-700 bg-gray-800 flex items-center justify-center hover:border-primary-400 transition"
                   aria-label="X (formerly Twitter)"
                 >
-                  <XIcon size={20} className="text-white" />
+                  <div className="text-white">
+                    <XIcon size={20} />
+                  </div>
                 </a>
               </div>
             </div>
