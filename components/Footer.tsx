@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { FiMail, FiPhone, FiFacebook, FiLinkedin, FiInstagram, FiYoutube } from 'react-icons/fi'
 
 // X (formerly Twitter) icon component
-const XIcon = ({ size = 20 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+const XIcon = ({ size = 20, className }: { size?: number; className?: string }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <path d="M18 6L6 18M6 6l12 12" />
   </svg>
 )
@@ -66,9 +66,7 @@ export default function Footer() {
                   className="w-10 h-10 rounded-lg border border-gray-700 bg-gray-800 flex items-center justify-center hover:border-primary-400 transition"
                   aria-label="X (formerly Twitter)"
                 >
-                  <div className="text-white">
-                    <XIcon size={20} />
-                  </div>
+                  <XIcon size={20} className="text-white" />
                 </a>
               </div>
             </div>
