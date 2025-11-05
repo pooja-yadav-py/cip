@@ -1,4 +1,4 @@
-import { FiGraduationCap } from 'react-icons/fi'
+import { FiBookOpen } from 'react-icons/fi'
 
 export default function Logo() {
   return (
@@ -6,7 +6,7 @@ export default function Logo() {
       {/* Logo Graphic */}
       <div className="relative flex items-center justify-center">
         {/* Graduation Cap */}
-        <FiGraduationCap className="absolute -top-2 left-1/2 transform -translate-x-1/2 text-primary-600" size={28} />
+        <FiBookOpen className="absolute -top-2 left-1/2 transform -translate-x-1/2 text-primary-600" size={28} />
         
         {/* Circle with C.I.P. text */}
         <div className="relative w-16 h-16 flex items-center justify-center">
