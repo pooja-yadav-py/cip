@@ -1,5 +1,4 @@
-import Link from 'next/link';
-
+import Link from 'next/link'
 import { FiMail, FiPhone, FiFacebook, FiLinkedin, FiInstagram, FiYoutube } from 'react-icons/fi'
 
 // X (formerly Twitter) icon component

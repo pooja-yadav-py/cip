@@ -9,7 +9,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-white sticky top-0 z-50 shadow-md border-b-2 border-primary-200">
+    <nav className="bg-white sticky top-[42px] z-50 shadow-md border-b-2 border-primary-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-[100px] items-center">
           {/* Logo Section */}
@@ -66,7 +66,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden">
+        <div className="md:hidden animate-slide-in-left">
           <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-primary-200">
             <Link 
               href="/" 

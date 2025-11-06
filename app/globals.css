@@ -24,3 +24,50 @@ body {
   }
 }
 
+@layer components {
+  .hero-btn {
+    display: flex;
+  }
+  
+  .btn-default {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-default.text-white {
+    background-color: white;
+    color: #991b1b;
+    border: none;
+  }
+  
+  .btn-default.text-white:hover {
+    background-color: #f9fafb;
+    transform: translateY(-2px);
+  }
+}
+
+@layer utilities {
+  @keyframes slide-in-left {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-slide-in-left {
+    animation: slide-in-left 0.5s ease-out;
+  }
+}
+

@@ -17,16 +17,22 @@ const services = [
     description: 'Navigate provincial immigration streams across all Canadian provinces and territories.',
   },
   {
+    icon: FaGraduationCap,
+    iconBg: 'bg-orange-500',
+    title: 'Study Permits',
+    description: 'Study permit applications, extensions, and post-graduation work permits for international students.',
+  },
+  {
     icon: FiBriefcase,
     iconBg: 'bg-purple-500',
     title: 'Work Permits',
     description: 'LMIA-based work permits, open work permits, and intra-company transfers to work in Canada.',
   },
   {
-    icon: FaGraduationCap,
-    iconBg: 'bg-orange-500',
-    title: 'Study Permits',
-    description: 'Study permit applications, extensions, and post-graduation work permits for international students.',
+    icon: FiHeart,
+    iconBg: 'bg-indigo-500',
+    title: 'Spouse work permit',
+    description: 'Open work permits for spouses and common-law partners of skilled workers and international students in Canada.',
   },
   {
     icon: FiHeart,
@@ -39,12 +45,6 @@ const services = [
     iconBg: 'bg-green-500',
     title: 'Citizenship Applications',
     description: 'Complete support for Canadian citizenship applications and renunciation processes.',
-  },
-  {
-    icon: FiUsers,
-    iconBg: 'bg-indigo-500',
-    title: 'Refugee & Asylum Claims',
-    description: 'Compassionate representation for refugee claims and humanitarian applications.',
   },
   {
     icon: FiTrendingUp,

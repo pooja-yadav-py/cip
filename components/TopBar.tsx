@@ -10,7 +10,7 @@ const XIcon = ({ size = 18, className }: { size?: number; className?: string }) 
 export default function TopBar() {
   return (
     <>
-      <div className="bg-slate-900 text-white py-2">
+      <div className="bg-slate-900 text-white py-2 fixed top-0 left-0 right-0 z-[60] md:animate-none animate-slide-in-left">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4 text-sm">
             {/* Left Section - Contact Information */}
@@ -85,8 +85,8 @@ export default function TopBar() {
           </div>
         </div>
       </div>
-      {/* Red separator line */}
-      <div className="h-0.5 bg-primary-600"></div>
+      {/* Spacer to prevent content from going under fixed TopBar */}
+      <div className="h-[42px] bg-slate-900"></div>
     </>
   )
 }
